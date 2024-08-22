@@ -79,7 +79,7 @@ import UIKit
     
     public private(set) var multiService: MultiDeviceService? = MultiDeviceServiceImplement()
     
-    var handlers: NSHashTable<MessageListDriverEventsListener> = NSHashTable<MessageListDriverEventsListener>.weakObjects()
+    open var handlers: NSHashTable<MessageListDriverEventsListener> = NSHashTable<MessageListDriverEventsListener>.weakObjects()
     
     @objc public required init(conversationId: String,type: ChatType) {
         self.to = conversationId
